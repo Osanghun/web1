@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Fantastic layout</title>
+    <link href="https://fonts.googleapis.com/css?family=Grenze&display=swap" rel="stylesheet">
+    <style>
+        /*리셋*/
+        body,ul {margin: 0;padding: 0;}
+        li {list-style-type: none;}
+        a {text-decoration: none; color:inherit;}
+        
+        body {background: #222;}
+        .clearfix::before, .clearfix::after {display: block; content:""; clear:both; }
+        .wrap {background: #111; color:white; width: 800px; margin: 100px auto;}
+        .sq {color: white; background: #111; padding: 1rem;}
+        .sq_item {float:left; width: 25%; padding-top: 25%; position: relative;}
+        .sq_item_large {width: 50%; padding-top: 50%;}
+        .sq_item_long {padding-top: 75%;}
+        .sq_item_wide {width: 50%;}
+        .sq_item_float-right { float: right;}
+        .sq_item_anchor {background: orange; position: absolute; left:0; right: 0; top: 0; bottom: 0; margin: 1rem; padding: 2rem; /*transition: transform 1s;*/
+        transition: all .3s; border: 0 solid white; overflow: hidden; font-size: 2rem; font-family: 'Grenze', serif; border-radius: 10px; }
+        
+        .sq_item_anchor::after {content:''; position: absolute; left: 0; right: 0; top: 0; bottom: 0; 
+        background: -moz-linear-gradient(top, rgba(0,0,0,0.8) 0%, rgba(0,0,0,0) 100%); /* FF3.6-15 */
+        background: -webkit-linear-gradient(top, rgba(0,0,0,0.8) 0%,rgba(0,0,0,0) 100%); /* Chrome10-25,Safari5.1-6 */
+        background: linear-gradient(to bottom, rgba(0,0,0,0.8) 0%,rgba(0,0,0,0) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#cc000000', endColorstr='#00000000',GradientType=0 ); /* IE6-9 */ z-index: 10; }
+        .sq_item_anchor:hover {/*transform: scale(1.3);*/ margin: -1.5rem; z-index: 30;border-width: 10px; font-size: 3rem; box-shadow: 0 0 30px 50px rgba(0,0,0,0.5);}
+        .sq_item_anchor_cover {position: absolute; left:0; top:0; z-index: 10;}
+        .sq_item_anchor_title {position: relative; z-index: 20;}
+    
+    </style>
+
+</head>
+<body>
+    <div class="wrap">
+        <ul class="sq clearfix">
+            <li class="sq_item sq_item_large">
+                <a href="" class="sq_item_anchor">
+                   <img class="sq_item_anchor_cover"src="crepe.png">
+                    <span class="sq_item_anchor_title">Crepe</span>
+                </a>
+            </li>
+            <li class="sq_item">
+                <a href="" class="sq_item_anchor">
+                   <img class="sq_item_anchor_cover"src="candy.png">
+                    <span class="sq_item_anchor_title">Candy</span>
+                </a>
+            </li>
+            <li class="sq_item">
+                <a href="" class="sq_item_anchor">
+                   <img class="sq_item_anchor_cover"src="cheeze.png">
+                    <span class="sq_item_anchor_title">Cheeze</span>
+                </a>
+            </li>
+            <li class="sq_item">
+                <a href="" class="sq_item_anchor">
+                   <img class="sq_item_anchor_cover"src="chili.png">
+                    <span class="sq_item_anchor_title">Chili</span>
+                </a>
+            </li>
+            <li class="sq_item sq_item_long sq_item_float-right">
+                <a href="" class="sq_item_anchor">
+                   <img class="sq_item_anchor_cover"src="cake.png">
+                    <span class="sq_item_anchor_title">Cake</span>
+                </a>
+            </li>
+            <li class="sq_item">
+                <a href="" class="sq_item_anchor">
+                   <img class="sq_item_anchor_cover"src="coke.png">
+                    <span class="sq_item_anchor_title">Coke</span>
+                </a>
+            </li>
+            <li class="sq_item">
+                <a href="" class="sq_item_anchor">
+                   <img class="sq_item_anchor_cover"src="cookie.png">
+                    <span class="sq_item_anchor_title">Cookie</span>
+                </a>
+            </li>
+            <li class="sq_item">
+                <a href="" class="sq_item_anchor">
+                   <img class="sq_item_anchor_cover"src="cream.png">
+                    <span class="sq_item_anchor_title">Cream</span>
+                </a>
+            </li>
+            <li class="sq_item sq_item_wide">
+                <a href="" class="sq_item_anchor">
+                   <img class="sq_item_anchor_cover"src="cinnamon.png">
+                    <span class="sq_item_anchor_title">Cinnamon</span>
+                </a>
+            </li>
+            <li class="sq_item">
+                <a href="" class="sq_item_anchor">
+                   <img class="sq_item_anchor_cover"src="choco.png">
+                    <span class="sq_item_anchor_title">Choco</span>
+                </a>
+            </li>
+        </ul>
+    </div>
+</body>
+</html>    
